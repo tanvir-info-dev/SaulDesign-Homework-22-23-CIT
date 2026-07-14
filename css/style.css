@@ -5,6 +5,36 @@ body{
 .container{
     max-width: 1248px;
 }
+.btn_wrapper{
+    margin-top: 48px;
+    display: flex;
+    column-gap: 24px;
+}
+.btn_1{
+    background-color: #00adb5;
+    padding: 10px 32px;
+    color: #EEEEEE;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 24px;
+    text-decoration: none;
+}
+.btn_2{
+    font-weight: 700;
+    font-size: 18px;
+    color: #EEEEEE;
+    background-color: rgba(57, 62, 70, 0.75);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 24px;
+    padding: 10px 32px;
+    text-decoration: none;
+}
+p{
+    font-size: 18px;
+    color: rgba(238, 238, 238, 0.75);
+    font-weight: 400;
+}
 
 /* Header */
 
@@ -14,7 +44,7 @@ body{
 }
 .navbar-nav{
     display: flex;
-    column-gap: 48px;
+    column-gap: 48px;color: rgba(238, 238, 238, 0.75);
 }
 .nav-link{
     font-size: 18px;
@@ -29,11 +59,15 @@ body{
 
 /* Banner */
 
-.banner_wrapper{
-    display: flex;
-    column-gap: 48px;
+.banner{
     position: relative;
+}
+.banner_wrapper{
+    column-gap: 48px;
     display: flex;
+    justify-content: space-between;
+    padding: 172px 0 74px 0;
+
 }
 .banner_content{
     margin-top: 39px;
@@ -44,11 +78,65 @@ body{
     line-height: 96px;
     font-weight: 700;
 }
-.banner_content h1 span{
+.title_split{
     color: #00adb5;
 }
 .banner_content img{
     position: absolute;
     left: 72px;
     top: 253px;
+}
+
+/* About */
+
+.about{
+    position: relative;
+}
+.about_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 230px 0 201px 0;
+}
+.about_content{
+    margin-top: 26px;
+}
+.about_content h2{
+    font-size: 64px;
+    color: #eeeeee;
+    font-weight: 700;
+}
+.about_content p{
+    width: 389px;
+    margin: 0;
+}
+#more {
+    display: none;
+}
+#readBtn {
+    background: none;
+    border: none;
+    color: #EEEEEE;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0;
+}
+#readBtn:hover {
+    color: #00bcd4;
+}
+.about_wrapper > img{
+    position: absolute;
+    z-index: -1;
+}
+.about_wrapper .music_vector{
+    top: 135px;
+    left: 96px;
+}
+.about_wrapper .arrow_vector{
+    left: 257px;
+    bottom: 223px;
+}
+.about_wrapper .light_vector{
+    top: 247px;
+    left: 490px;
 }
