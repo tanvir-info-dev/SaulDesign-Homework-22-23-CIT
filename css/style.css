@@ -35,6 +35,14 @@ p{
     color: rgba(238, 238, 238, 0.75);
     font-weight: 400;
 }
+h2{
+    font-size: 64px;
+    color: #eeeeee;
+    font-weight: 700;
+}
+.title_split{
+    color: #00adb5;
+}
 
 /* Header */
 
@@ -61,12 +69,12 @@ p{
 
 .banner{
     position: relative;
+    padding: 172px 0 74px 0;
 }
 .banner_wrapper{
     column-gap: 48px;
     display: flex;
     justify-content: space-between;
-    padding: 172px 0 74px 0;
 
 }
 .banner_content{
@@ -78,9 +86,6 @@ p{
     line-height: 96px;
     font-weight: 700;
 }
-.title_split{
-    color: #00adb5;
-}
 .banner_content img{
     position: absolute;
     left: 72px;
@@ -91,19 +96,14 @@ p{
 
 .about{
     position: relative;
+    padding: 230px 0 201px 0;
 }
 .about_wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 230px 0 201px 0;
 }
 .about_content{
     margin-top: 26px;
-}
-.about_content h2{
-    font-size: 64px;
-    color: #eeeeee;
-    font-weight: 700;
 }
 .about_content p{
     width: 389px;
@@ -139,4 +139,73 @@ p{
 .about_wrapper .light_vector{
     top: 247px;
     left: 490px;
+}
+
+/* My Recent Works */
+
+.works{
+    padding: 268px 0;
+}
+
+/* Contact */
+
+.contact{
+    padding: 258px 0;
+    position: relative;
+}
+.contact_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.contact_content{
+    width: 600px;
+}
+.contact_form{
+    width: 600px;
+}
+.contact_form .name_email{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.contact_form form label{
+    color: #EEEEEE;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact_form form input,
+.contact_form form textarea{
+    background-color: rgba(57, 62, 70, 0.5);
+    border-radius: 16px;
+    padding: 16px 0 16px 24px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(238, 238, 238, 0.5);
+    border: none;
+}
+.contact_form form input:focus,
+.contact_form form textarea:focus{
+    outline: none;
+}
+.contact_form form textarea{
+    height: 280px;
+}
+.contact_form form .submit{
+    background-color: #00adb5;
+    padding: 10px 32px;
+    color: #EEEEEE;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 24px;
+    border: none;
+    width: fit-content;
+    margin-top: 34px;
+}
+.contact_wrapper .keyboard_vector{
+    position: absolute;
+    top: 60px;
+    right: 467px;
 }
