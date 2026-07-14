@@ -209,6 +209,11 @@ h2{
     top: 60px;
     right: 467px;
 }
+.contact_wrapper .mail_vector{
+    position: absolute;
+    right: 165px;
+    bottom: 169px;
+}
 
 /* Footer */
 
